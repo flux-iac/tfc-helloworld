@@ -1,0 +1,19 @@
+---
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: tfc-helloworld
+  namespace: flux-system
+spec:
+  approvePlan: auto
+  backendConfig:
+    disable: true
+  cliConfigSecretRef:
+    name: tfc-cli-config
+    namespace: flux-system
+  path: ./tf
+  interval: 3m
+  sourceRef:
+    kind: GitRepository
+    name: tfc-helloworld
+    namespace: flux-system
