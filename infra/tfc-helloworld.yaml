@@ -11,6 +11,9 @@ spec:
   cliConfigSecretRef:
     name: tfc-cli-config
     namespace: flux-system
+  vars:
+  - name: subject
+    value: "my cat"
   path: ./tf
   interval: 3m
   sourceRef:
