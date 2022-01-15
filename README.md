@@ -2,7 +2,7 @@
 
 Encode your Terraform TFRC fle which contains your Terraform Cloud or Terraform Enterprise token.
 
-```
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
