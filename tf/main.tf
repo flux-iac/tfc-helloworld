@@ -11,7 +11,7 @@ terraform {
 
 variable "subject" {
    type = string
-   default = "World TFC"
+   default = "World Terraform Cloud"
    description = "Subject to hello"
 }
 
